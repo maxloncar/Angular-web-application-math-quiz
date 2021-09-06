@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+input.ng-invalid.ng-dirty{
+    border-bottom-color : #e91e63 !important;
+    box-shadow: 0 1px 0 0 #e91e63 !important;
+}
+
+.input-field input[type=text]:focus + label{
+    color: #007bff !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: #007bff !important;
+    box-shadow: 0 1px 0 0 #007bff !important;
+}
+
+.material-icons.active {
+    color: #007bff !important;
+}
+
+.card-image img{
+    display: block; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+button.btn-small{
+    display: block; 
+    margin: 0 auto;
+    background-color: #41a7eb;
+}
+
+button.btn-small:hover, button.btn-small:active{
+    background-color: #007bff !important;
+}
+
+button.btn-submit{
+    width: 100%;
+    background-color: #41a7eb;
+}
+
+button.btn-submit:hover{
+    background-color: #007bff;
+}
+
+ul.answer li:hover{
+    background-color: #007bff;
+    color: #eafaf9;
+    cursor: pointer;
+}
+
+ul li.selected{
+    background-color: #007bff !important;
+    color: #eafaf9 !important;
+}
+
+.data{
+    text-align: center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -1,0 +1,67 @@
+USE [QuizDB]
+GO
+SET IDENTITY_INSERT [dbo].[HardQuestion] ON 
+
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (1, N'Pronađi x:	2x – y = (3/4)x + 6.', NULL, N'x = 4(y + 6) / 5,', N'x = (y + 6) / 5', N'x = (y + 6)', N'x = 4(y - 6) / 5', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (2, N'Izračunajte:		(-1 + 2i) - (2 - 3i).', NULL, N'1 - i', N'-3 + 5i', N'3 - 5i', N'-3 - 5i', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (3, N'Izračunajte:		Re(-2 + 3i) + Im(1 - 5i).', NULL, N'-2', N'-1', N'-7', N'2', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (4, N'Izračunajte:		i²⁰²⁰.', NULL, N'-i', N'i', N'-1', N'1', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (5, N'Izračunajte faktorijel od broja 5.', NULL, N'120', N'50', N'25', N'500', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (6, N'Izračunajte faktorijel od broja 6.', NULL, N'720', N'36', N'12', N'600', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (7, N'Koji od navedenih brojeva nije djeljiv s brojem 8?', NULL, N'560', N'480', N'514', N'376', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (8, N'Ivica biciklira 6.6km do posla i 7.2km od posla svaki dan. Koliko ukupno kilometara Ivica biciklira od i do posla za tjedan dana?', NULL, N'46.2km', N'50.4km', N'4.2km', N'96.6km', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (9, N'Koji oblik geometrijskog tijela ima jednak broj dijagonala i stranica?', NULL, N'Mnogokut', N'Romb', N'Trapez', N'Kvadrat', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (10, N'Koliko simetričnih linija ima romb?', NULL, N'4', N'2', N'6', N'3', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (11, N'Pravokutnik ima stranicu duljine 17cm i kraću stranicu 4 puta manju. Izračunaj opseg tog pravokutnika.', NULL, N'72.25cm', N'60cm', N'42.5cm', N'170cm', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (12, N'Pravokutnik ima stranicu duljine 17cm i kraću stranicu 4 puta manju. Izračunaj površinu tog pravokutnika.', NULL, N'72.25cm²', N'221cm²', N'68cm²', N'170.75cm²', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (13, N'Izračunaj: (999 - 99 + 9) : 9.', NULL, N'91', N'109', N'99', N'101', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (14, N'Koliko minuta sadrži 1/12 dana?', NULL, N'240', N'120', N'60', N'15', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (15, N'U jednom redu kazališta, sjedala su označena borjevima od 1 do 50. Marko sjedi na sjedalu broj 17, a Ivana na sjedalu broj 39. Koliko sjedala se nalazi između njih?', NULL, N'23', N'22', N'21', N'20', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (16, N'Kolika je razlika između najmanjeg 4-znamenkastog broja i najvećeg 3-znamenkastog broja?', NULL, N'9899', N'100', N'10', N'1', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (17, N'Broj 123 je prost broj?', NULL, N'Točno', N'Netočno', NULL, NULL, 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (18, N'Koliko stranica ima dekagon?', NULL, N'10', N'5', N'9', N'2', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (19, N'Navedite naziv sljedećeg niza brojeva: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,...', NULL, N'Pitagorin niz', N'Fibonaccijev niz', N'Eulerov niz', N'Gaussov niz', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (20, N'Izračunaj treći korijen od broja 1331.', NULL, N'13', N'19', N'11', N'17', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (21, N'Izračunaj četvrti korijen od broja 2401.', NULL, N'6', N'9', N'8', N'7', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (22, N'Izračunaj sumu (5x³ - 3x² - 1) i (3x² + 1).', NULL, N'5x³', N'6x²', N'5x', N'3x²', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (23, N'Izračunaj sumu (9x³ + 3x² - 4x - 3) i (12x² + 5x + 3).', NULL, N'9x³ + 9x² + x', N'9x³ + 15x² + x', N'9x³ + 9x² - x', N'9x³ + 15x² + x + 3', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (24, N'Izračunaj: ', N'potencije8.PNG', N'8', N'0', N'1', N'Niti jedan od ponuđenih', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (25, N'Izračunaj: ', N'potencije5.PNG', N'5^⁸', N'5^⁴', N'5^¹⁸', N'Niti jedan od ponuđenih', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (26, N'Pojednostavi omjer na najjednostavniji način:		1.5 : 2.5', NULL, N'6 : 10', N'15 : 25', N'0.75 : 1.25', N'3 : 5', 3)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (27, N'Izračunaj x:	x * (2/5) * (5/8) * (4/7) = 22', NULL, N'154', N'164', N'198', N'132', 0)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (28, N'Izračunaj x:	882 * (3/7) * (4/9) * (7/12) = x', NULL, N'196', N'98', N'294', N'89', 1)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (29, N'Izračunaj x:	4² + 3² = x²', NULL, N'14', N'7', N'5', N'25', 2)
+GO
+INSERT [dbo].[HardQuestion] ([hQnID], [hQn], [hImageName], [hOption1], [hOption2], [hOption3], [hOption4], [hAnswer]) VALUES (30, N'Napiši izraz za determinantu sa slike.', N'determinanta.png', N'a11 * a12 - a21 * a22', N'a11 * a22 + a12 * a21', N'a11 * a12 + a21 * a22', N'a11 * a22 - a12 * a21', 3)
+GO
+SET IDENTITY_INSERT [dbo].[HardQuestion] OFF
+GO

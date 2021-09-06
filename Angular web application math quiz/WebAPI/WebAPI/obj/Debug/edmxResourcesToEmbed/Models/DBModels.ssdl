@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EasyQuestion">
+    <Key>
+      <PropertyRef Name="eQnID" />
+    </Key>
+    <Property Name="eQnID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eQn" Type="varchar" MaxLength="250" />
+    <Property Name="eImageName" Type="varchar" MaxLength="50" />
+    <Property Name="eOption1" Type="varchar" MaxLength="50" />
+    <Property Name="eOption2" Type="varchar" MaxLength="50" />
+    <Property Name="eOption3" Type="varchar" MaxLength="50" />
+    <Property Name="eOption4" Type="varchar" MaxLength="50" />
+    <Property Name="eAnswer" Type="int" />
+  </EntityType>
+  <EntityType Name="HardQuestion">
+    <Key>
+      <PropertyRef Name="hQnID" />
+    </Key>
+    <Property Name="hQnID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hQn" Type="varchar" MaxLength="250" />
+    <Property Name="hImageName" Type="varchar" MaxLength="50" />
+    <Property Name="hOption1" Type="varchar" MaxLength="50" />
+    <Property Name="hOption2" Type="varchar" MaxLength="50" />
+    <Property Name="hOption3" Type="varchar" MaxLength="50" />
+    <Property Name="hOption4" Type="varchar" MaxLength="50" />
+    <Property Name="hAnswer" Type="int" />
+  </EntityType>
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="ParticipantID" />
+    </Key>
+    <Property Name="ParticipantID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Score" Type="int" />
+    <Property Name="TimeSpent" Type="int" />
+    <Property Name="Difficulty" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RegularQuestion">
+    <Key>
+      <PropertyRef Name="rQnID" />
+    </Key>
+    <Property Name="rQnID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rQn" Type="varchar" MaxLength="250" />
+    <Property Name="rImageName" Type="varchar" MaxLength="50" />
+    <Property Name="rOption1" Type="varchar" MaxLength="50" />
+    <Property Name="rOption2" Type="varchar" MaxLength="50" />
+    <Property Name="rOption3" Type="varchar" MaxLength="50" />
+    <Property Name="rOption4" Type="varchar" MaxLength="50" />
+    <Property Name="rAnswer" Type="int" />
+  </EntityType>
+  <EntityContainer Name="QuizDBModelStoreContainer">
+    <EntitySet Name="EasyQuestion" EntityType="Self.EasyQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HardQuestion" EntityType="Self.HardQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Participant" EntityType="Self.Participant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegularQuestion" EntityType="Self.RegularQuestion" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

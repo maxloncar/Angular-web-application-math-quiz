@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<div class="row">
+    <div class="col s8 offset-s2">
+        <h2 class="header">Završen kviz - teška težina!</h2>
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="../../assets/img/trophy.png" style="width: 250px; height: 250px;">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content data">
+                    <h4>{{quizService.getParticipantName()}}</h4>
+                    <h3>{{quizService.correctAnswerCount}}/10</h3>
+                    <span>Proteklo vrijeme: {{quizService.displayTimeElapsed()}}</span>
+                </div>
+                <div class="card-action">
+                    <button class="waves-effect waves-light btn-small" (click)="OnHardSubmit()">Predaj</button>
+                </div>
+            </div>
+            <a class="btn-floating halfway-fab waves-effect waves-light red" (click)="Restart()">
+                <i class="material-icons">replay</i>
+            </a>
+        </div>
+        <!---------------------Pitanja s točnim odgovorima--------------------->
+        <h3>Pitanja s točnim odgovorima</h3>
+        <ng-container *ngFor="let qn of quizService.qns; let i = index;">
+            <div class="card blue">
+                <div class="card-content white-text">
+                    <span class="card-title">{{i+1}}</span>
+                    <p>{{qn.hQn}}</p>
+                    <div *ngIf="qn.hImageName != null">
+                        <img class="center" [src]="quizService.rootUrl + '/Images/' + qn.hImageName" style="width: 350px; height: 400px;">
+                    </div>
+                </div>
+
+                <div class="card-action">
+                    <ul class="collection">
+                        <ng-container *ngFor="let option of qn.Options; let j = index;">
+                            <li *ngIf="option != null" class="collection-item">
+                                {{option}}
+                                <span class="badge" *ngIf="qn.correct == j">
+                                    <i class="material-icons green-text">check_circle</i>
+                                </span>
+                                <span class="badge red-text" *ngIf="qn.answer == j && qn.correct != j">Netočno</span>
+                            </li>
+                        </ng-container>
+                    </ul>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

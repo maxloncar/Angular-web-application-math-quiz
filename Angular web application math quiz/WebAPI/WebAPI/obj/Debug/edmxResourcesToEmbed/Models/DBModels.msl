@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuizDBModelStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="EasyQuestions">
+      <EntityTypeMapping TypeName="QuizDBModel.EasyQuestion">
+        <MappingFragment StoreEntitySet="EasyQuestion">
+          <ScalarProperty Name="eQnID" ColumnName="eQnID" />
+          <ScalarProperty Name="eQn" ColumnName="eQn" />
+          <ScalarProperty Name="eImageName" ColumnName="eImageName" />
+          <ScalarProperty Name="eOption1" ColumnName="eOption1" />
+          <ScalarProperty Name="eOption2" ColumnName="eOption2" />
+          <ScalarProperty Name="eOption3" ColumnName="eOption3" />
+          <ScalarProperty Name="eOption4" ColumnName="eOption4" />
+          <ScalarProperty Name="eAnswer" ColumnName="eAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HardQuestions">
+      <EntityTypeMapping TypeName="QuizDBModel.HardQuestion">
+        <MappingFragment StoreEntitySet="HardQuestion">
+          <ScalarProperty Name="hQnID" ColumnName="hQnID" />
+          <ScalarProperty Name="hQn" ColumnName="hQn" />
+          <ScalarProperty Name="hImageName" ColumnName="hImageName" />
+          <ScalarProperty Name="hOption1" ColumnName="hOption1" />
+          <ScalarProperty Name="hOption2" ColumnName="hOption2" />
+          <ScalarProperty Name="hOption3" ColumnName="hOption3" />
+          <ScalarProperty Name="hOption4" ColumnName="hOption4" />
+          <ScalarProperty Name="hAnswer" ColumnName="hAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegularQuestions">
+      <EntityTypeMapping TypeName="QuizDBModel.RegularQuestion">
+        <MappingFragment StoreEntitySet="RegularQuestion">
+          <ScalarProperty Name="rQnID" ColumnName="rQnID" />
+          <ScalarProperty Name="rQn" ColumnName="rQn" />
+          <ScalarProperty Name="rImageName" ColumnName="rImageName" />
+          <ScalarProperty Name="rOption1" ColumnName="rOption1" />
+          <ScalarProperty Name="rOption2" ColumnName="rOption2" />
+          <ScalarProperty Name="rOption3" ColumnName="rOption3" />
+          <ScalarProperty Name="rOption4" ColumnName="rOption4" />
+          <ScalarProperty Name="rAnswer" ColumnName="rAnswer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Participants">
+      <EntityTypeMapping TypeName="QuizDBModel.Participant">
+        <MappingFragment StoreEntitySet="Participant">
+          <ScalarProperty Name="Difficulty" ColumnName="Difficulty" />
+          <ScalarProperty Name="TimeSpent" ColumnName="TimeSpent" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParticipantID" ColumnName="ParticipantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

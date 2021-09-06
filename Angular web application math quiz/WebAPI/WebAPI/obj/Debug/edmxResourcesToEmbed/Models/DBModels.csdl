@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EasyQuestion">
+    <Key>
+      <PropertyRef Name="eQnID" />
+    </Key>
+    <Property Name="eQnID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="eQn" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="eImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eOption1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eOption2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eOption3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eOption4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="eAnswer" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HardQuestion">
+    <Key>
+      <PropertyRef Name="hQnID" />
+    </Key>
+    <Property Name="hQnID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hQn" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hOption1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hOption2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hOption3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hOption4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="hAnswer" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RegularQuestion">
+    <Key>
+      <PropertyRef Name="rQnID" />
+    </Key>
+    <Property Name="rQnID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rQn" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="rImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rOption1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rOption2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rOption3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rOption4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rAnswer" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="DBModel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EasyQuestions" EntityType="Self.EasyQuestion" />
+    <EntitySet Name="HardQuestions" EntityType="Self.HardQuestion" />
+    <EntitySet Name="RegularQuestions" EntityType="Self.RegularQuestion" />
+    <EntitySet Name="Participants" EntityType="QuizDBModel.Participant" />
+  </EntityContainer>
+  <EntityType Name="Participant">
+    <Key>
+      <PropertyRef Name="ParticipantID" />
+    </Key>
+    <Property Name="ParticipantID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Score" Type="Int32" />
+    <Property Name="TimeSpent" Type="Int32" />
+    <Property Name="Difficulty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,67 @@
+USE [QuizDB]
+GO
+SET IDENTITY_INSERT [dbo].[RegularQuestion] ON 
+
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (1, N'U skupu cijelih brojeva ne pripadaju?', NULL, N'Racionalni brojevi', N'Negativni brojevi', N'Broj 0', N'Prirodni brojevi', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (2, N'Brojevi koji se mogu zapisati u obliku razlomka su: ', NULL, N'Cijeli brojevi', N'Racionalni brojevi', N'Prirodni brojevi', N'Iracionalni brojevi', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (3, N'Riješi linearnu jednadžbu tako da dobiješ x: 25x=100', NULL, N'x=5', N'x=25', N'x=4', N'x=15', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (4, N'Riješi linearnu jednadžbu tako da dobiješ x: 3x=72-5x', NULL, N'x=4', N'x=24', N'x=8', N'x=9', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (5, N'Kružnice koje imaju zajedničko središte?', NULL, N'Koncentrične', N'Zajedničke', N'Centrične', N'Usklađene', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (6, N'Formula za jednostavni kamatni račun glasi: ', NULL, N'k=(g*p*n)/10', N'k=(g*p*n)/100', N'k=g*p*n*100', N'k=100/(g*p*n)', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (7, N'U kamatnom računu, p se odnosi na: ', NULL, N'Vrijeme u godini', N'Glavnicu', N'Kamatnu stopu', N'Kamatu', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (8, N'10% od broja 50 iznosi: ', NULL, N'25', N'2.5', N'15', N'5', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (9, N'5% od broja 40 iznosi: ', NULL, N'2', N'2.5', N'1.2', N'4', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (10, N'Ako komad robe košta 100 kuna. Koliko košta taj isti komad robe s 20% popusta?', NULL, N'20kn', N'80kn', N'98kn', N'120kn', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (11, N'Redovna cijena cipela iznosi 450kn. Ako je došlo do povećanja od 30%, koliko iznosi nova cijena cipela?', NULL, N'135kn', N'315kn', N'585kn', N'610kn', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (12, N'Cijena hlača iznosi 250kn. Ako je cijena pala na 150kn, koliko iznosi sniženje u postotku?', NULL, N'45%', N'60%', N'30%', N'40%', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (13, N'Ako se cijena proizvoda podigne sa 300kn na 360kn, koliko iznosi povećanje u postotku?', NULL, N'20%', N'15%', N'25%', N'23%', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (14, N'Kako glasi formula za Pitagorin poučak za primjer na slici?', N'trokut.png', N'h²=a²-b²', N'h²=a²+b²', N'a²=h²-b²', N'b²=h²+a²', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (15, N'Veličina središnjeg kuta dvostruko je veća od veličine obodnog kuta nad istim lukom.', NULL, N'Točno', N'Netočno', NULL, NULL, 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (16, N'Kolika je vjerojatnost da ćete dobiti šesticu u bacanju kocke?', NULL, N'50%', N'20%', N'16.67%', N'33.33%', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (17, N'Realni brojevi su brojevi koji nisu racionalni, tj. ne mogu se zapisati u obliku razlomka.', NULL, N'Točno', N'Netočno', NULL, NULL, 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (18, N'U jednakostraničnom trokutu, sva tri kuta su veličine ________ stupnjeva.', NULL, N'30', N'120', N'45', N'60', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (19, N'Ako je pravokutnik širok 5cm i dugačak 4cm, koliko iznosi njegova površina?', NULL, N'P=2dm²', N'P=10cm²', N'P=18cm²', N'P=10dm²', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (20, N'Krug ima zadani promjer od 8mm. Koliko iznosi opseg zadanog kruga?', NULL, N'O=16pi mm', N'O=8pi mm', N'O=32pi mm', N'O=64pi mm', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (21, N'Kako glasi opći oblik kvadratne jednadžbe?', NULL, N'ax²-bx-c=0', N'ax²+bx=c', N'ax²+bx+c=0', N'ax²+bx-c=0', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (22, N'Kod kompleksnih brojeva, i² iznosi: ', NULL, N'1', N'i', N'-i', N'-1', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (23, N'Ako imamo kompleksni broj s vrijednošću x+yi, kako glasi njegova konjugirana verzija?', NULL, N'x-yi', N'-x-yi', N'-x+yi', N'x+yi', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (24, N'Kako glasi formula za tangens vrha A?', N'trokut.png', N'tgA=b/a', N'tgA=a/b', N'tgA=a/h', N'tgA=b/h', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (25, N'Kako glasi formula za sinus vrha A?', N'trokut.png', N'sinA=b/a', N'sinA=a/b', N'sinA=a/h', N'sinA=b/h', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (26, N'Kako glasi formula za kosinus vrha A?', N'trokut.png', N'cosA=b/a', N'cosA=a/b', N'cosA=a/h', N'cosA=b/h', 3)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (27, N'Kako glasi formula za kotagens vrha A?', N'trokut.png', N'ctgA=b/a', N'ctgA=a/b', N'ctgA=a/h', N'ctgA=b/h', 0)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (28, N'Učenik je u školskoj godini ostvario sljedeće ocjene: 5, 4, 3, 3, 5, 4, 4, 5. Izračunajte aritmetičku sredinu navedenih ocjena.', NULL, N'4.25', N'4.125', N'4.1', N'4.3', 1)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (29, N'Pomnoži: (x-4)(x+5).', NULL, N'x²-4x-20', N'x²+5x-20', N'x²+x-20', N'x²-x-20', 2)
+GO
+INSERT [dbo].[RegularQuestion] ([rQnID], [rQn], [rImageName], [rOption1], [rOption2], [rOption3], [rOption4], [rAnswer]) VALUES (30, N'Izluči: 5x²-15x-20.', NULL, N'5(x+4)(x+1)', N'-5(x+4)(x-1)', N'-2(x-4)(x+5)', N'5(x-4)(x+1)', 3)
+GO
+SET IDENTITY_INSERT [dbo].[EasyQuestion] OFF
+GO

@@ -1,0 +1,67 @@
+USE [QuizDB]
+GO
+SET IDENTITY_INSERT [dbo].[EasyQuestion] ON 
+
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (1, N'Kako se naziva rezultat oduzimanja?', NULL, N'Razlika', N'Količnik', N'Pribrojnik', N'Umanjenik', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (2, N'Kako se naziva rezultat dijeljenja?', NULL, N'Razlika', N'Količnik', N'Pribrojnik', N'Djeljenik', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (3, N'Kako se naziva rezultat množenja?', NULL, N'Razlika', N'Količnik', N'Umnožak', N'Pribrojnik', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (4, N'Kako se naziva rezultat zbrajanja?', NULL, N'Umnožak', N'Količnik', N'Pribrojnik', N'Zbroj', 3)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (5, N'Koliko broj 37 sadrži desetica?', NULL, N'3', N'3.7', N'37', N'4', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (6, N'Koliko broj 59 sadrži jedinica?', NULL, N'0.9', N'9', N'1', N'5', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (7, N'Kako se naziva broj za koji se umanjuje u oduzimanju?', NULL, N'Razlika', N'Umanjenik', N'Umanjitelj', N'Količnik', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (8, N'Kako se naziva broj koji se umanjuje u oduzimanju?', NULL, N'Razlika', N'Umanjenik', N'Umanjitelj', N'Količnik', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (9, N'Formula za izračun površine kvadrata glasi: ', NULL, N'P = a²', N'P = (av) / 2', N'P = ab', N'P = abc', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (10, N'Koja vrsta trokuta se nalazi na slici?', N'jednakostranicni.png', N'Pravokutan', N'Jednakostranični', N'Raznostranični', N'Jednakokračni', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (11, N'Koja vrsta trokuta se nalazi na slici?', N'jednakokracni.png', N'Pravokutan', N'Jednakostranični', N'Raznostranični', N'Jednakokračni', 3)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (12, N'Koja vrsta trokuta se nalazi na slici?', N'trokut.png', N'Pravokutan', N'Jednakostranični', N'Tupokutan', N'Jednakokračni', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (13, N'Kako se naziva broj koji se dijeli?', NULL, N'Razlika', N'Djeljenik', N'Djelitelj', N'Količnik', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (14, N'Kako se naziva broj kojim dijelimo?', NULL, N'Razlika', N'Djeljenik', N'Djelitelj', N'Količnik', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (15, N'Kako se naziva brojevi koje množimo?', NULL, N'Količnici', N'Pribrojnici', N'Umnošci', N'Faktori', 3)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (16, N'Što je to dio ravnine omeđeno s dvjema različitim točkama?', NULL, N'Dužina', N'Pravac', N'Polupravac', N'Niti jedan od odgovora', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (17, N'Kakvi su to pravci koji se sijeku u jednoj točki pod pravim kutom?', NULL, N'Usporedni', N'Okomiti', N'Linearni', N'Niti jedan od odgovora', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (18, N'Kakvi su to pravci koji nemaju zajedničkih točaka i ne sijeku se?', NULL, N'Usporedni', N'Okomiti', N'Linearni', N'Niti jedan od odgovora', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (19, N'Što je to dio ravnine omeđeno s jednom točkom, a s druge strane nije omeđeno?', NULL, N'Dužina', N'Pravac', N'Polupravac', N'Niti jedan od odgovora', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (20, N'Koje je ovo matematičko svojstvo: (ab)c = a(bc) ?', NULL, N'Linearnost', N'Komutativnost', N'Distributivnost', N'Asocijativnost', 3)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (21, N'Koje je ovo matematičko svojstvo: (a + b)c = ac + bc ?', NULL, N'Linearnost', N'Komutativnost', N'Distributivnost', N'Asocijativnost', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (22, N'Koje je ovo matematičko svojstvo: a * b = b * a ?', NULL, N'Linearnost', N'Komutativnost', N'Distributivnost', N'Asocijativnost', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (23, N'Pravi kut je kut od ________ stupnjeva.', NULL, N'180', N'45', N'90', N'60', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (24, N'Kako se naziva kut manji od 90 stupnjeva?', NULL, N'Ispruženi', N'Izbočeni', N'Tupi', N'Šiljasti', 3)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (25, N'Kako se naziva kut veći od 90 stupnjeva?', NULL, N'Ispruženi', N'Izbočeni', N'Tupi', N'Šiljasti', 2)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (26, N'Kako se naziva kut od 180 stupnjeva?', NULL, N'Ispruženi', N'Izbočeni', N'Tupi', N'Šiljasti', 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (27, N'Kako se naziva kut od 360 stupnjeva?', NULL, N'Ispruženi', N'Puni', N'Tupi', N'Šiljasti', 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (28, N'Zbroj unutrašnjih kutova u trokutu iznosi 360 stupnjeva.', NULL, N'Točno', N'Netočno', NULL, NULL, 1)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (29, N'Zbroj vanjskih kutova u trokutu iznosi 360 stupnjeva.', NULL, N'Točno', N'Netočno', NULL, NULL, 0)
+GO
+INSERT [dbo].[EasyQuestion] ([eQnID], [eQn], [eImageName], [eOption1], [eOption2], [eOption3], [eOption4], [eAnswer]) VALUES (30, N'Formula za opseg pravokutnika glasi: ', NULL, N'0 = a + b + c', N'0 = 2(a + b)', N'0 = 4a', N'0 = a + b + c + d', 1)
+GO
+SET IDENTITY_INSERT [dbo].[EasyQuestion] OFF
+GO
